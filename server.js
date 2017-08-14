@@ -5,6 +5,29 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var content = {
+    title:'Article One | Rajat Chakraborty',
+    heading:'Article One',
+    date:'August 15,2017',
+    content:<p>This is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first article
+           </p>
+           <p>This is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first article
+           </p> 
+           <p>This is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first article
+           </p>
+           <p>This is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first article
+           </p>
+           <p>This is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first article
+           </p> 
+           <p>This is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first article
+           </p>
+           <p>This is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first articleThis is the content of my first article
+           </p>
+};
+
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
